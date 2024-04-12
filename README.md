@@ -6,7 +6,7 @@
 This project is a personalised dashboard that displays various information such as weather, cryptocurrency data, and a background image fetched from the Unsplash API.
 
 ## Features:
-* Background Image: Fetches a random landscape-oriented nature photo from the Unsplash APIs and 
+ Background Image: Fetches a random landscape-oriented nature photo from the Unsplash APIs and 
                     sets it as the background image of the document body.
 * Author Display: Displays the author's name of the fetched image.
 * Cryptocurrency Data: Fetches Dogecoin data from the CoinGecko API and displays it on the 
