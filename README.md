@@ -6,11 +6,11 @@
 This project is a personalised dashboard that displays various information such as weather, cryptocurrency data, and a background image fetched from the Unsplash API.
 
 ## Features:
-* ## Background Image
-* ## Author Display
-* ## Cryptocurrency Data
-* ## Current Time
-* ## Weather Information
+* Background Image
+* Author Display
+* Cryptocurrency Data
+* Current Time
+* Weather Information
 
 ## Technologies Used:
 * HTML
