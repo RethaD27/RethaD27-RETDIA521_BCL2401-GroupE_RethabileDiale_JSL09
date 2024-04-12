@@ -1,17 +1,15 @@
 // Fetch a random landscape-oriented nature photo from Unsplash API
-fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=nature")
-    .then(res => res.json())
-    .then(data => {
+const res = await fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=nature")
+const data = await res.json()
         // Set the background image of the document body to the fetched image
         document.body.style.backgroundImage = `url(${data.urls.regular})`;
         // Set the author name in the HTML element with id "author"
         document.getElementById("author").textContent = `By: ${data.user.name}`; 
-    })
-    .catch(err => {
+    //.catch(err => {
         // If an error occurs, use a default background image and author
-        document.body.style.backgroundImage = `url(https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMTEwMjl8MHwxfHJhbmRvbXx8fHx8fHx8fDE2MjI4NDE2NzA&ixlib=rb-1.2.1&q=80&w=1080)`;
-        document.getElementById("author").textContent = `By: Rethabile Diale`;
-     }) 
+     //   document.body.style.backgroundImage = `url(https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMTEwMjl8MHwxfHJhbmRvbXx8fHx8fHx8fDE2MjI4NDE2NzA&ixlib=rb-1.2.1&q=80&w=1080)`;
+      //  document.getElementById("author").textContent = `By: Rethabile Diale`;
+     //}) 
     
 // Fetch Dogecoin data from CoinGecko API     
 fetch("https://api.coingecko.com/api/v3/coins/dogecoin")
